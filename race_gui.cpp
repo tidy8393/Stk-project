@@ -908,7 +908,7 @@ void RaceGUI::drawSpeedEnergyRank(const AbstractKart* kart,
 {
 #ifndef SERVER_ONLY
     float min_ratio         = std::min(scaling.X, scaling.Y);
-    const int SPEEDWIDTH   = 576;
+    const int SPEEDWIDTH   = 576; // 출력할 이미지 범위 조정
     int meter_width        = (int)(SPEEDWIDTH*min_ratio);
     int meter_height       = (int)(SPEEDWIDTH*min_ratio);
 
